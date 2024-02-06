@@ -31,3 +31,55 @@
 -   Knowing these distributions is necessary for appropriately applying statistics.
 -   Data distributions provide insights into nature.
 -   Physical and biological systems are modeled using distributions.
+
+### Central Tendency
+
+The value you would expect the data points to merge towards
+
+### Mean
+
+-   Also known as arithmetic mean
+-   Also known as average
+-   It is suitable for roughly normal distributed data
+-   The suitable data types are interval, ratio
+
+### Mean for other data types
+
+-   **Discrete data example -** Average US family has 1.9 children.
+-   **Ordinal data example -** Average course rating of 4.3 stars (out of 1-5 stars)
+-   **Nominal data example -** Average person likes 1.7 ice cream flavor (1 = chocolate, 2 = vanilla, 3 = strawberry)
+-   **Conclusions:**
+    -   The mean is best applied to interval and ratio data.
+    -   The mean of discrete and ordinald data can be useful, but must be carefully interpreted.
+    -   The mean is not appropriate for nominal data.
+
+### Median
+
+-   It is suitable for unimodal distributions.
+-   The suitable data types are interval, ratio.
+
+### Mode
+
+-   Mode is known as most common value.
+-   It is suitable for any distribution.
+-   Suitable for any data (numerical data should be converted to discrete)
+
+### Summary (Mean, Median, Mode)
+
+**Mean :** Average value, sensitive to outliers. Most commonly used measure of central tendency.
+**Median :** Middle value (50% below, 50% above).
+**Mode :** Most common value.
+
+### Variance
+
+-   It is suitable for any distribution.
+-   Suitable data types are numerical and ordinal (but requires mean)
+-   In formula, why are the differences squared?
+    -   We want the distance to the average; without squaring the variance would be 0.
+-   In formula, why not take the absolute value ("mean absolute difference")?
+    -   **Squaring:** emphasizes large values; is better for optimization (continuous and the differentiable); is closer to Euclidean distance; is the second "moment" of the distribution; better link to least-squares regression; and much more.
+    -   **MAD:** Also good; robust to outliers; less commonly used.
+-   In formula, why divide by n-1?
+    -   Dividing by N-1 is for sample variance.
+    -   Dividing by N is for population variance.
+    -   Population mean is a theoretical quantity, whereas the sample mean is an empirical quantity.
