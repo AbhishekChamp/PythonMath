@@ -83,3 +83,38 @@ The value you would expect the data points to merge towards
     -   Dividing by N-1 is for sample variance.
     -   Dividing by N is for population variance.
     -   Population mean is a theoretical quantity, whereas the sample mean is an empirical quantity.
+
+**QQ Plot:** To determine whether your data distribution is normal(Gaussian or non-Gaussian).
+
+### Statistical moments
+
+| Moment Number | Stats Number | Interpretation       |
+| ------------- | ------------ | -------------------- |
+| First Moment  | Mean         | Average Value        |
+| Second Moment | Variance     | Dispersion           |
+| Third Moment  | Skewness     | Dispersion asymmetry |
+| Fourth Moment | Kurtosis     | Tail "fatness"       |
+
+### How many bins? (Histogram)
+
+-   k = [(max(x) - min(x)) / h]
+-   h - bin width
+-   k - number of bins
+-   we use the ceiled values
+
+| Guidelines        | Formula                | Key Advantage                            |
+| ----------------- | ---------------------- | ---------------------------------------- |
+| Sturges           | k = [log2(n)] + 1      | Depends on data count                    |
+| Freedman-Diaconis | h = 2IQR / cuberoot(n) | Depends on data count and on data spread |
+| Arbitrary         | k = 40                 | Easy to use                              |
+
+### Entropy
+
+-   Suprising things convey more information.
+-   This formula can be applied to Nominal, ordinal, discrete data.
+-   If we have interval or ratio data, we can convert it to discrete by binning (via histogram creation)
+-   Entropy depends on bin size and number
+-   High entropy means that the dataset has a lot of variability.
+-   Low entropy means that most of the values of the dataset repeat (and therefore are redundant)
+-   Entropy is nonlinear and makes no assumptions about the distribution.
+-   Variance depends on the validity of the mean and therefore is appropriate for roughly normal data.
