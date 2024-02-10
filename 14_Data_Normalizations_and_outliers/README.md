@@ -55,3 +55,49 @@
 -   Compute the distance from each data point to the mean.
 -   Convert distances to z-score.
 -   Remove outliers based on threshold, as shown previously.
+
+### Removing outliners : Data Trimming
+
+-   Sort the mean-centered data.
+-   Remove the most extreme k values, or the most extreme k%.
+
+### Pros and cons of data trimming
+
+-   **Advantages:**
+    -   Simple and easy to implement.
+    -   Can be effective.
+-   **Disadvantages:**
+    -   Requires subjective threshold.
+    -   Can remove non-outliers.
+
+### Parametric and non-parametric complements
+
+| **Parametric test** | **Nonparametric test**  |
+| ------------------- | ----------------------- |
+| 1-sample t-test     | Wilcoxon sign-rank test |
+| 2-sample t-test     | Mann-Whitney U test     |
+| Pearson correlation | Spearman correlation    |
+| ANOVA               | Kruskal-Wallis test     |
+|                     | Permutation testing     |
+
+Why are non-parametric methods robust to outliers?
+They are based on medians or ranks, which are insensitive to outliers.
+
+### Goal of nonlinear transforms
+
+-   Many statistical methods are linear or make assumptions about data distributions (e.g., Gaussian).
+-   Non-extreme data values may be labeled as **outliers** due to nonlinear scaling.
+-   **Goal:** Transform data to make linear methods valid, or to make data distribution approach Gaussian.
+
+### Common nonlinear data transformations
+
+-   Rank-transform
+-   Logarithm
+-   Square root
+-   Fisher-z
+
+### Mind the interpretation gap
+
+-   Non-linear methods are not always appropriate (e.g., negative numbers for log or square root).
+-   Non-linear transformations alter the spacing between data points as a function of data value.
+-   Most statistical models are linear, so results must be interpreted in terms of the transformed data, not the original data.
