@@ -45,3 +45,29 @@ The **probability** of event **_i_** is the **count of events** **_i_** divided 
 -   The y-axis value at each x-value is the sum of all probabilities to the legt of that x-value.
 -   A cdf starts at 0 and increases monotonically to 1. The sum of the cdf is more than 1.
 -   **Example:** What is the probability of getting at least 1 std higher on the SATs than average?
+
+### Monte Carlo Methods
+
+-   To solve really hard problems by randomly sampling the solution instead of doing the **_real work._**
+-   Often used in physics, statistics, deep learning, even in pure math.
+-   **Monte Carlo sampling** is the same thing as randomly sampling from a population to estimate an unknown population parameter.
+
+### Sources Of Sampling Variability
+
+-   **Sampling variability:** Different samples from the same population can have different values of the same measurement.
+-   **Implications:** A single measurement may be an unreliable estimate of a population parameter.
+-   **Natural variation:** Often seen in biology **_(e.g., height, weight)_** and physics **_(e.g., earthquake magnitude, number of stars per galaxy)_**
+-   **Measurement noise:** The senors are imperfect **_(e.g., electrical line noise, measuring micrograms with a gram-precision scale)_**
+-   **Complex systems:** Measuring some factors while ignoring others **_(e.g., measuring height while ignoring age)._**
+-   **Stochasticity (randomness):** The universe is a wild and unpredictable place **_(e.g., photons hitting a camera lens)._**
+
+### What to do about sampling variability?
+
+-   **Take many samples!** Averaging together many samples will approximate the true population mean.
+-   **Run statustical analyses!** Compute measures of confidence of sample-based parameter estimates.
+
+### Expected value Vs Average value
+
+-   Average is an empirical sample estimate based on finite data.
+-   Expectation value is the expected average in the population, or from a very very large number of samples **_(approaching infinity)._**
+-   Expected value and average value are the same **_when drawing LARGE and representative random samples from a population._**
