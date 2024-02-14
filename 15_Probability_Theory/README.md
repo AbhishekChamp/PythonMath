@@ -71,3 +71,25 @@ The **probability** of event **_i_** is the **count of events** **_i_** divided 
 -   Average is an empirical sample estimate based on finite data.
 -   Expectation value is the expected average in the population, or from a very very large number of samples **_(approaching infinity)._**
 -   Expected value and average value are the same **_when drawing LARGE and representative random samples from a population._**
+
+### Conditional Probability
+
+-   The probability of event **A** changes based on what you know about event **B**.
+-   **A** and **B** are independent when knowing **_P(A)_** provides no information about **_P(B)_**. In such cases, **_P(A intersect B) = P(A)P(B)_**
+-   **P (A | B) = P (A intersect B) / P(B)**
+
+### Law of Large Numbers
+
+-   As the number of experiment repetitions increases, the average of the sample means better approximates the population mean.
+-   Any one sample (or any one experiment) is sensitive to sampling variability, noise, and other sources of non-systematic variation.
+-   This means that one sample or one experiment is unlikely to provide a good estimate of the true population mean.
+-   But sampling many times can provide an accurate measure of the true population mean.
+
+### Central Limit Theorem
+
+-   The distribution of sample means approaches a Gaussian distribution, regardless of the shape of the population distribution.
+-   Random samples from independent variables will tend towards a normal **(Gaussian)** distribution, even if the variables are non-normally distributed.
+-   The above depends on sample count, data scale or normalization and other factors.
+-   Many statistical analyses rely on the assumption of normality (roughly Gaussian distribution).
+-   Gaussian distributions are easy to paramterize (mean, variance, skew, kurtosis) and compute confidence intervales around.
+-   Independent components analysis (ICA) is based on the assumption that signals are non-Gaussian distributed while random mixtures of signals are Gaussian.
