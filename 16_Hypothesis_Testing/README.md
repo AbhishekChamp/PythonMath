@@ -17,3 +17,14 @@
 -   The **null hypothesis** is the hypothesis that nothing interesting is happening in the data.
 -   It is not possible to prove an hypothesis.
 -   Hypotheses can be rejected or fail to be rejected (interpreted as being supported).
+
+### p-value
+
+-   They are probabilities.
+-   They range from 0 to 1.
+-   Values closer to zero indicate low probability of alternative hypothesis values, given null hypothesis H<sub>A</sub> | H<sub>O</sub>
+-   Values closer to one indicate high probability of alternative hypothesis values, given null hypothesis H<sub>A</sub> | H<sub>O</sub>
+-   A finding is called **statistically significant** if the test statistic is greater than a threshold.
+-   Threshold is arbitrary; common values are p<.05 or p<0.01
+-   There are several ways to compute a p-value, and they depend on the specific statistical test and assumptions made.
+-   Importantly, the interpretation of a p-value is always the same, regardless of how the p-value was computed.
