@@ -16,3 +16,9 @@
 -   **Equal or unequal sample sizes:** Whether the groups have the same number of values (applies only to unpaired groups).
 -   **Equal:** Both groups have N=30.
 -   **Unequal:** Group "A" is 13 Parkinson's patients, group "B" is 20 matched controls.
+
+### Wilcoxon signed-rank test
+
+-   Nonparametric alternative to the one or two samples t-test.
+-   Mainly used when the data do not confirm to the normality assumption.
+-   Tests for differences in medians instead of differences in means (median is insensitive to outliers)
