@@ -22,3 +22,10 @@
 -   Nonparametric alternative to the one or two samples t-test.
 -   Mainly used when the data do not confirm to the normality assumption.
 -   Tests for differences in medians instead of differences in means (median is insensitive to outliers)
+
+### Mann-Whitney U test
+
+-   Nonparametric alternative to the independent two-samples t-test.
+-   Mainly used when the data do not confirm to the normality assumption.
+-   Tests for differences in medians instead of differences in means (median is insensitive to outliers).
+-   The two groups do not need to have the same sample size.
